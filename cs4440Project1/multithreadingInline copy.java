@@ -12,9 +12,8 @@ public class Multhreading extends Thread
     @SuppressWarnings("deprecation")
 	public static void main(String [] args)
     {
-        for(String input:args)
-        {
-        	String cardNumber = input;
+			String cardNumber = "4388576018402626"; //INVALID
+			//String cardNumber = "4388576018410707"; //VALID
 			Thread multhread1 = new Thread(() -> {   	
 				if(cardNumber.length() >= 13 && cardNumber.length() <= 19 && cardNumber.matches("[0-9]+"))
 				{
@@ -130,7 +129,6 @@ public class Multhreading extends Thread
 	        multhread5.stop();
 	        multhread6.stop();
     	}   
-    }
 }
 
     
