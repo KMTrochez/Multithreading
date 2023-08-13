@@ -15,7 +15,6 @@ public class multithreadingCP extends Thread
         for(String input:args)
         {
 			String cardNumber = input;
-			
             Thread multhread1 = new Thread(() -> {
                 if (cardNumber.length() >= 13 && cardNumber.length() <= 19 && cardNumber.matches("[0-9]+")) {
                     System.out.println("The card number: " + cardNumber + " is a valid credit card number input.");
